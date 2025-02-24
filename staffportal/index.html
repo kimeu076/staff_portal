@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Self-Service Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <button id="toggleSidebar">☰</button>
+            <h2>Self-Service</h2>
+        </div>
+        <ul class="sidebar-menu">
+            
+                <li><a href="#">Dashboard</a></li>
+              
+           
+            <li class="dropdown">
+                <a href="#">Leave ▾</a>
+                <ul class="submenu">
+                    <li><a href="leave.html">Apply for Leave</a></li>
+                    <li><a href="leave.html">Leave History</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Payroll ▾</a>
+                <ul class="submenu">
+                    <li><a href="#">Payslips</a></li>
+                    <li><a href="#">Deductions</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Employee Profile</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="welcome-section">
+            <div>
+                <p>Welcome, John Doe</p>
+                <p>Position: Senior Accountant</p>
+                <p>Department: Finance</p>
+            </div>
+        </div>
+        
+        <!-- Card Container -->
+        <div class="card-container">
+            <div class="card">
+                <h3>Leave Balance</h3>
+                <p>Annual Leave: 12 days</p>
+                <p>Sick Leave: 5 days</p>
+            </div>
+    
+            <div class="card">
+                <h3>Payroll Details</h3>
+                <p>Basic Salary: $4,500</p>
+                <p>Deductions: $500</p>
+            </div>
+    
+            <div class="card">
+                <h3>Upcoming Leave Requests</h3>
+                <p>Vacation Leave: Pending Approval</p>
+            </div>
+    
+            <div class="card">
+                <h3>Recent Payslips</h3>
+                <p>January Payslip: <a href="#">View</a></p>
+                <p>February Payslip: <a href="#">View</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Right Sidebar (Notifications) -->
+    <div class="right-sidebar">
+        <h3>📢 Notifications</h3>
+        <ul>
+            <li class="important">🔔 Leave request approved!</li>
+            <li class="payroll">💰 New payslip available</li>
+            <li class="reminder">📢 Reminder: Tax form submission due</li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

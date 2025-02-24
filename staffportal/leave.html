@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave | Staff Self-Service Portal</title>
+    <link rel="stylesheet" href="leave.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h2>Staff Portal</h2>
+            <button id="toggleSidebar">☰</button>
+        </div>
+        <ul class="sidebar-menu">
+            
+            <li><a href="index.html">Dashboard</a></li>
+            <li class="dropdown">
+                <a href="#">Leave ▾</a>
+                <ul class="submenu">
+                    <li><a href="#">Apply for Leave</a></li>
+                    <li><a href="leave.html#leave-history">Leave History</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Payroll ▾</a>
+                <ul class="submenu">
+                    <li><a href="#">Payslips</a></li>
+                    <li><a href="#">Deductions</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Employee Profile</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        
+        <!-- Top Navigation (Full Width) -->
+        <div class="top-nav">
+            <div class="nav-left">Staff Self-Service Portal</div>
+            <div class="nav-right">
+                <span>Welcome, John Doe</span>
+            </div>
+        </div>
+
+        <div class="leave-container">
+            <h2>Leave Management</h2>
+
+            <div class="leave-content">
+                <!-- Apply for Leave Form -->
+                <div class="leave-card">
+                    <h3>Apply for Leave</h3>
+                    <form>
+                        <label for="leave-type">Leave Type:</label>
+                        <select id="leave-type">
+                            <option>Annual Leave</option>
+                            <option>Sick Leave</option>
+                            <option>Maternity Leave</option>
+                            <option>Other</option>
+                        </select>
+
+                        <label for="start-date">Start Date:</label>
+                        <input type="date" id="start-date">
+
+                        <label for="end-date">End Date:</label>
+                        <input type="date" id="end-date">
+
+                        <label for="reason">Reason:</label>
+                        <textarea id="reason" rows="5"></textarea> <!-- Increased size -->
+
+                        <button type="submit" class="btn">Submit Leave Request</button>
+                    </form>
+                </div>
+
+                <!-- Leave History Section -->
+                <div id="leave-history" class="leave-card">
+                    <h3>Leave History</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Leave Type</th>
+                                <th>Start Date</th>
+                                <th>End Date</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Annual Leave</td>
+                                <td>2024-03-01</td>
+                                <td>2024-03-10</td>
+                                <td>Approved</td>
+                            </tr>
+                            <tr>
+                                <td>Sick Leave</td>
+                                <td>2024-01-15</td>
+                                <td>2024-01-18</td>
+                                <td>Rejected</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
